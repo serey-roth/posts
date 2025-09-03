@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "react-hooks", "react-refresh"],
+    "rules": {
+        "react-refresh/only-export-components": [
+            "warn",
+            { "allowConstantExport": true }
+        ]
+    },
+    "ignorePatterns": ["dist", ".eslintrc.cjs"],
+    "env": {
+        "browser": true,
+        "es2020": true
+    }
+}
